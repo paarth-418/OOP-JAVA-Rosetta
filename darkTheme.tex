@@ -1,0 +1,358 @@
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % ROSETTA DARK THEME (SAFE)
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % PAGE
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \pagecolor{black!92}
+
+% \color{white}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % PAGE NUMBERS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \usepackage{fancyhdr}
+
+% \pagestyle{fancy}
+
+% \fancyhf{}
+
+% \fancyfoot[C]{\textcolor{white}{\thepage}}
+
+% \renewcommand{\headrulewidth}{0pt}
+% \renewcommand{\footrulewidth}{0pt}
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % CODE BLOCKS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \definecolor{CodeBg}{RGB}{30,30,30}
+
+% \usemintedstyle{monokai}
+
+% \setminted{
+%     fontsize=\small,
+%     linenos,
+%     breaklines,
+%     breakanywhere,
+%     autogobble,
+%     tabsize=4,
+%     bgcolor=CodeBg
+% }
+
+
+
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% % HYPERLINKS
+% %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \hypersetup{
+%     colorlinks=true,
+%     linkcolor=RosettaGold,
+%     urlcolor=RosettaJade,
+%     citecolor=RosettaOrange
+% }
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ROSETTA DARK THEME
+% Designed for the existing ROSETTA color system
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% REQUIRED PACKAGES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% These should already exist in the main preamble.
+% Do NOT load them again if they are already loaded.
+
+% \usepackage{xcolor}
+% \usepackage{pagecolor}
+% \usepackage{fancyhdr}
+% \usepackage{hyperref}
+% \usepackage{minted}
+% \usepackage[most]{tcolorbox}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DARK THEME PALETTE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Main document colors
+\definecolor{RosettaDarkPage}{RGB}{18,18,20} %rgb(18,18,20)
+\definecolor{RosettaDarkText}{RGB}{235,235,238} %rgb(235,235,238)
+\definecolor{RosettaDarkMuted}{RGB}{170,170,178}
+
+% Code
+\definecolor{RosettaCodeBg}{RGB}{25,25,28}
+\definecolor{RosettaCodeFrame}{RGB}{65,65,72}
+
+% Rosetta Rule
+\definecolor{RosettaBlueDarkBg}{RGB}{24,30,40} % rgb(24,30,40)
+\definecolor{RosettaBlueDarkFrame}{RGB}{100,145,210} % rgb(100,145,210)
+
+% Common Trap
+\definecolor{RosettaRedDarkBg}{RGB}{42,25,28}
+\definecolor{RosettaRedDarkFrame}{RGB}{220,100,105}
+
+% Mental Model
+\definecolor{RosettaPurpleDarkBg}{RGB}{34,27,45}
+\definecolor{RosettaPurpleDarkFrame}{RGB}{170,125,220}
+
+% Deep Insight
+\definecolor{RosettaGreenDarkBg}{RGB}{24,38,31}
+\definecolor{RosettaGreenDarkFrame}{RGB}{90,185,125}
+
+% Mental Compression
+\definecolor{RosettaGrayDarkBg}{RGB}{30,31,35}
+\definecolor{RosettaGrayDarkFrame}{RGB}{145,150,160}
+
+\definecolor{RosettaBlue}{RGB}{71,85,105}
+\definecolor{RosettaBlueBg}{RGB}{248,250,252}
+
+\definecolor{RosettaGreen}{RGB}{75,85,99}
+\definecolor{RosettaGreenBg}{RGB}{247,248,250}
+
+\definecolor{RosettaRed}{RGB}{127,29,29}
+\definecolor{RosettaRedBg}{RGB}{252,248,248}
+
+\definecolor{RosettaPurple}{RGB}{88,80,141}
+\definecolor{RosettaPurpleBg}{RGB}{249,248,252}
+
+\definecolor{RosettaGray}{RGB}{55,65,81}
+\definecolor{RosettaGrayBg}{RGB}{249,250,251}
+
+\definecolor{RosettaOrange}{RGB}{217,119,6}         % rgb(217, 119, 6) - Rich Amber/Orange for clean text contrast
+\definecolor{RosettaOrangeBg}{RGB}{254,243,199}     % Soft warm amber tint for backgrounds
+
+\definecolor{RosettaSeaGreen}{RGB}{46,139,87}          % #2E8B57
+\definecolor{RosettaSeaGreenBg}{RGB}{245,249,246}      % Light tint matching your palette style
+
+\definecolor{RosettaRoyalPurple}{RGB}{102,45,145}      % #662d91
+\definecolor{RosettaRoyalPurpleBg}{RGB}{249,246,252}  % Light background tint to match your style
+
+\definecolor{RosettaGold}{RGB}{255,199,44}         % #FFC72C
+\definecolor{RosettaGoldBg}{RGB}{255,251,240}       % Soft cream background tint for readability
+
+\definecolor{RosettaDeepGreen}{RGB}{0,103,75}       % #00674b
+\definecolor{RosettaDeepGreenBg}{RGB}{242,248,245}   % Soft, clean background tint for text contrast
+
+\definecolor{RosettaJade}{RGB}{0,168,107}         % #00A86B - Jade Green
+\definecolor{RosettaJadeBg}{RGB}{242,250,246}     % Soft matching background tint
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% GLOBAL PAGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagecolor{RosettaDarkPage}
+
+\color{RosettaDarkText}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE STYLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+
+\fancyhf{}
+
+\fancyfoot[C]{%
+\textcolor{RosettaDarkMuted}{\thepage}%
+}
+
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% CHAPTER / PLAIN PAGE STYLE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% The book class automatically uses the "plain" page style
+% on chapter-opening pages. Make those pages dark as well.
+
+\fancypagestyle{plain}{
+\fancyhf{}
+\fancyfoot[C]{%
+\textcolor{RosettaDarkMuted}{\thepage}%
+}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% HYPERLINKS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\hypersetup{
+colorlinks=true,
+linkcolor=RosettaGold,
+urlcolor=RosettaJade,
+citecolor=RosettaOrange,
+filecolor=RosettaJade,
+menucolor=RosettaJade
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MATH / SYMBOL VISIBILITY
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Make mathematical content follow the dark-theme foreground.
+\everymath{\color{RosettaDarkText}}
+\everydisplay{\color{RosettaDarkText}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MINTED CODE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\definecolor{CodeBg}{RGB}{25,25,28}
+
+\usemintedstyle{monokai}
+
+\setminted{
+fontsize=\small,
+linenos,
+breaklines,
+breakanywhere,
+autogobble,
+tabsize=4,
+bgcolor=CodeBg
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TCOLORBOX DARK THEME
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Important:
+% These definitions replace the light-theme versions.
+% Existing document content does NOT need to change.
+%
+% Example:
+%
+% \begin{rosettarule}
+% ...
+% \end{rosettarule}
+%
+% will automatically use the dark theme.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% ROSETTA RULE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewtcolorbox{rosettarule}{
+colback=RosettaBlueDarkBg,
+colframe=RosettaBlueDarkFrame,
+coltext=RosettaDarkText,
+coltitle=white,
+boxrule=0.6pt,
+arc=1.5mm,
+left=3mm,
+right=3mm,
+top=2mm,
+bottom=2mm,
+fonttitle=\bfseries,
+title=Rosetta Rule
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% COMMON TRAP
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewtcolorbox{trap}{
+colback=RosettaRedDarkBg,
+colframe=RosettaRedDarkFrame,
+coltext=RosettaDarkText,
+coltitle=white,
+boxrule=0.6pt,
+arc=1.5mm,
+left=3mm,
+right=3mm,
+top=2mm,
+bottom=2mm,
+fonttitle=\bfseries,
+title=Common Trap
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MENTAL MODEL
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewtcolorbox{mentalmodel}{
+colback=RosettaPurpleDarkBg,
+colframe=RosettaPurpleDarkFrame,
+coltext=RosettaDarkText,
+coltitle=white,
+boxrule=0.6pt,
+arc=1.5mm,
+left=3mm,
+right=3mm,
+top=2mm,
+bottom=2mm,
+fonttitle=\bfseries,
+title=Mental Model
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DEEP INSIGHT
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewtcolorbox{idea}{
+colback=RosettaGreenDarkBg,
+colframe=RosettaGreenDarkFrame,
+coltext=RosettaDarkText,
+coltitle=white,
+boxrule=0.6pt,
+arc=1.5mm,
+left=3mm,
+right=3mm,
+top=2mm,
+bottom=2mm,
+fonttitle=\bfseries,
+title=Deep Insight
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% MENTAL COMPRESSION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\renewtcolorbox{compressionbox}{
+colback=RosettaGrayDarkBg,
+colframe=RosettaGrayDarkFrame,
+coltext=RosettaDarkText,
+coltitle=white,
+boxrule=0.6pt,
+arc=1.5mm,
+left=3mm,
+right=3mm,
+top=2mm,
+bottom=2mm,
+fonttitle=\bfseries,
+title=Mental Compression
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% TABLES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Improves readability of booktabs/table rules on dark pages.
+
+% \arrayrulecolor{RosettaDarkMuted}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% LISTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Make itemize/enumerate labels visible on dark pages.
+
+\renewcommand{\labelitemi}{\textcolor{RosettaJade}{\textbullet}}
+\renewcommand{\labelitemii}{\textcolor{RosettaGold}{\textendash}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DARK THEME COMPLETE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
