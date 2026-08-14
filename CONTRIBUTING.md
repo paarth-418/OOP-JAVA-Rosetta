@@ -159,7 +159,7 @@ git checkout -b contribution/your-contribution-name
 **For content contributions:**
 - Edit `java.tex` or create a new `.tex` file if starting a new chapter
 - Follow content and LaTeX standards above
-- Test compilation: `pdflatex java.tex` or `xelatex`
+- Test compilation: `pdflatex java.tex` or `xelatex` or [Compile Commands](./javaMaterialCompileCommands.md)
 
 **For design contributions:**
 - Update the relevant section in `java.tex`
@@ -217,18 +217,6 @@ Content addition + exercises
 ## 📊 Current Roadmap & Needs
 
 See **[ROADMAP.md](./ROADMAP.md)** for complete roadmap.
-
-Quick overview of immediate needs:
-
-| Chapter | Status | Priority | Help Needed |
-|---------|--------|----------|------------|
-| 1. Why OOP Exists | ✅ Draft | 🔴 High | Exercises, examples |
-| 2. Classes & Objects | 🚧 Planned | 🔴 High | Full content |
-| 3. State & Behavior | 🚧 Planned | 🔴 High | Full content |
-| 4. Encapsulation | 🚧 Planned | 🔴 High | Design perspective |
-| 5. Inheritance | ⏳ Not started | 🟡 Medium | Expert chapter |
-| 6. Polymorphism | ⏳ Not started | 🟡 Medium | Expert chapter |
-| 7. Abstraction | ⏳ Not started | 🟡 Medium | Expert chapter |
 
 ---
 
