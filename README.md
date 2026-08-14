@@ -23,39 +23,6 @@ Then we build up from there.
 
 ---
 
-## 📖 Current Content
-
-| Part | Status | Progress |
-|------|--------|----------|
-| **I. Foundations** | 🚧 In Progress | 25% |
-| **II. Core Pillars** | ⏳ Planned | 0% |
-| **III. Design** | ⏳ Planned | 0% |
-| **IV. Java Ecosystem** | ⏳ Planned | 0% |
-
-### Part I: Foundations ✅ (Drafting)
-- [x] Chapter 1: Why OOP Exists (draft complete)
-- [ ] Chapter 1: Exercises & examples needed
-- [ ] Chapter 2: Classes & Objects (needs full content)
-- [ ] Chapter 3: State & Behavior (needs full content)
-- [ ] Chapter 4: Responsibility & Encapsulation (needs full content)
-
-### Part II: Core Pillars (Coming)
-- [ ] Chapter 5: Inheritance
-- [ ] Chapter 6: Polymorphism
-- [ ] Chapter 7: Abstraction
-
-### Part III: Design (Coming)
-- [ ] Chapter 8: SOLID Principles
-- [ ] Chapter 9: Design Patterns
-
-### Part IV: Java Ecosystem (Coming)
-- [ ] Chapter 10: Collections Framework
-- [ ] Chapter 11: Streams & Functional Programming
-- [ ] Chapter 12: Concurrency
-- [ ] Chapter 13: Exception Handling
-
----
-
 ## 🎯 Key Features
 
 ### 🧠 Mental Models First
@@ -81,16 +48,7 @@ Each chapter includes exercises that progress in difficulty.
 
 ### Reading the Encyclopedia
 
-The document is compiled as a **PDF** from LaTeX source. To build it yourself:
-
-```bash
-# Requires pdflatex or xelatex
-pdflatex java.tex
-
-# Or with better output:
-xelatex java.tex
-```
-
+The document is compiled as a **PDF** from LaTeX source. To build it yourself: check [Compile Commands](./javaMaterialCompileCommands.md)
 ### Using as a Learner
 
 Start with **Chapter 1: Why OOP Exists** and progress sequentially. Each chapter builds on previous concepts.
@@ -112,19 +70,6 @@ Start with **Chapter 1: Why OOP Exists** and progress sequentially. Each chapter
 2. **Check [ROADMAP.md](./ROADMAP.md)** — See what needs work
 3. **Open an issue or PR** — Start small or claim a chapter
 4. **Follow standards** — Content, LaTeX, and pedagogy guidelines provided
-
-### Current Contribution Needs
-
-**High Priority** (Help Needed Now):
-- [ ] Exercises for Chapter 1
-- [ ] Full content for Chapter 2 (Classes & Objects)
-- [ ] Full content for Chapter 3 (State & Behavior)
-- [ ] Full content for Chapter 4 (Encapsulation)
-
-**Medium Priority** (Next Phase):
-- [ ] Inheritance chapter (expert needed)
-- [ ] Polymorphism chapter (expert needed)
-- [ ] Design patterns content
 
 **Skill Levels**:
 - 🟢 Beginner-friendly: Exercises, examples, proofreading
@@ -193,18 +138,6 @@ The encyclopedia uses the **Rosetta Design System**:
 - **Found an error?** Open an issue labeled `bug`
 - **Want to discuss approach?** Open an issue labeled `discussion`
 - **Ready to contribute?** See [CONTRIBUTING.md](./CONTRIBUTING.md)
-
----
-
-## 📊 Project Status
-
-| Metric | Value |
-|--------|-------|
-| **Chapters Drafted** | 1 / 13 |
-| **Chapters Completed** | 0 / 13 |
-| **Exercises Written** | 0 (needed) |
-| **Contributors Needed** | 5-10 |
-| **Estimated Completion** | Q1 2027 |
 
 ---
 
