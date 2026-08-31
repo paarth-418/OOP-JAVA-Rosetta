@@ -2,7 +2,7 @@
 
 **A mental-model-first reference for understanding Object-Oriented Programming and Java.**
 
-> **⚠️ WORK IN PROGRESS**: This is an evolving learning resource. Guidance, feedback, and contributions are actively welcomed. See [Contributing](#-contributing) below.
+> **WORK IN PROGRESS**: This is an evolving learning resource. Guidance, feedback, and contributions are actively welcomed. See [Contributing](#-contributing) below.
 
 ---
 
@@ -10,10 +10,10 @@
 
 The **Rosetta Encyclopedia** is a learning-first approach to OOP and Java that prioritizes:
 
-✅ **Conceptual understanding** before syntax  
-✅ **Mental models** that clarify *why* not just *what*  
-✅ **Progressive complexity** from foundations to advanced design  
-✅ **Pedagogical rigor** with learning objectives, examples, and exercises  
+**Conceptual understanding** before syntax  
+**Mental models** that clarify *why* not just *what*  
+**Progressive complexity** from foundations to advanced design  
+**Pedagogical rigor** with learning objectives, examples, and exercises  
 
 Unlike traditional textbooks that throw `class Student {}` at you, we start with a real question:
 
@@ -25,21 +25,21 @@ Then we build up from there.
 
 ## 🎯 Key Features
 
-### 🧠 Mental Models First
+###  Mental Models First
 Every concept includes an analogy or mental model before the technical explanation.
 
 **Example**: Instead of just defining encapsulation, we show why banks don't let customers directly modify balance.
 
-### 📝 Learning Objectives
+###  Learning Objectives
 Every section explicitly states what you should understand after reading it.
 
-### ⚠️ Common Pitfalls
+###  Common Pitfalls
 We highlight and explain beginner mistakes, not just correct usage.
 
-### 💻 Real Code Examples
+### Real Code Examples
 Java examples are complete, runnable, and annotated.
 
-### 🎓 Practice Exercises
+### Practice Exercises
 Each chapter includes exercises that progress in difficulty.
 
 ---
@@ -59,10 +59,10 @@ Start with **Chapter 1: Why OOP Exists** and progress sequentially. Each chapter
 
 **This project needs YOU.** We're looking for:
 
-- 👨‍🎓 **Educators** to write chapters and exercises
-- 🧑‍💻 **Experts** to review content and add design patterns
-- ✍️ **Writers** to improve clarity and examples
-- 🎨 **Designers** to enhance LaTeX formatting
+- **Educators** to write chapters and exercises
+- **Experts** to review content and add design patterns
+- **Writers** to improve clarity and examples
+- **Designers** to enhance LaTeX formatting
 
 ### Quick Start
 
@@ -72,9 +72,9 @@ Start with **Chapter 1: Why OOP Exists** and progress sequentially. Each chapter
 4. **Follow standards** — Content, LaTeX, and pedagogy guidelines provided
 
 **Skill Levels**:
-- 🟢 Beginner-friendly: Exercises, examples, proofreading
-- 🟡 Intermediate: Clarifications, analogies, practice problems
-- 🔴 Expert-only: New chapters, design patterns, SOLID principles
+-  Beginner-friendly: Exercises, examples, proofreading
+- Intermediate: Clarifications, analogies, practice problems
+- Expert-only: New chapters, design patterns, SOLID principles
 
 ---
 
@@ -103,14 +103,14 @@ This encyclopedia assumes:
 
 All content follows strict pedagogical standards:
 
-✅ Learning objectives per section  
-✅ Conceptual explanations before code  
-✅ Multiple perspectives and analogies  
-✅ Runnable, annotated code examples  
-✅ Common pitfalls and antipatterns  
-✅ Practice exercises with solutions  
-✅ Professional LaTeX formatting  
-✅ Expert technical review  
+Learning objectives per section  
+Conceptual explanations before code  
+Multiple perspectives and analogies  
+Runnable, annotated code examples  
+Common pitfalls and antipatterns  
+Practice exercises with solutions  
+Professional LaTeX formatting  
+Expert technical review  
 
 See [CONTRIBUTING.md](./CONTRIBUTING.md) for detailed standards.
 
@@ -153,8 +153,8 @@ This project is inspired by:
 ## 📫 Stay Updated
 
 - ⭐ Star this repo to follow progress
-- 👁️ Watch for announcements
-- 📝 Open issues to suggest improvements
+-  Watch for announcements
+- Open issues to suggest improvements
 
 ---
 
