@@ -31,6 +31,7 @@
 
 \usepackage{etoolbox}
 \usepackage{fancyvrb}
+\usepackage{fancyhdr}
 % \usepackage{piton}
 \usepackage{texments}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -161,6 +162,66 @@ fonttitle=\bfseries,
 title=Mental Compression
 }
 
+\definecolor{RM}{RGB}{190,194,198}
+
+% Internal identifier
+\newcommand{\RMark}{%
+    \textcolor{RM}{%
+        \fontsize{2.5}{3}\selectfont
+        R01--OOP--JAVA--REF--26
+    }%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% PAGE ID
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\RPageID}{%
+\begin{tikzpicture}[
+    remember picture,
+    overlay
+]
+    \node[
+        anchor=south east,
+        opacity=0.055,
+        font=\ttfamily\fontsize{3}{3.5}\selectfont
+    ]
+    at (
+        [xshift=-7mm,yshift=5mm]current page.south east
+    )
+    {R01::OOP.JAVA::26};
+\end{tikzpicture}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% EDGE MICRO-MARK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand{\REdge}{%
+\begin{tikzpicture}[
+    remember picture,
+    overlay
+]
+    \node[
+        rotate=90,
+        opacity=0.035,
+        font=\ttfamily\fontsize{3}{3.5}\selectfont
+    ]
+    at (
+        [xshift=-2.5mm]current page.east
+    )
+    {R01.OOP.JAVA.26};
+\end{tikzpicture}%
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% APPLY TO EVERY PAGE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\AddToHook{shipout/background}{%
+    \RPageID
+    \REdge
+}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % CUSTOM COMMANDS
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
