@@ -161,34 +161,20 @@ left=3mm,right=3mm,top=2mm,bottom=2mm,
 fonttitle=\bfseries,
 title=Mental Compression
 }
-
-\definecolor{RM}{RGB}{190,194,198}
-
-% Internal identifier
-\newcommand{\RMark}{%
-    \textcolor{RM}{%
-        \fontsize{2.5}{3}\selectfont
-        R01--OOP--JAVA--REF--26
-    }%
-}
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% PAGE ID
+% PAGE MICRO-MARK
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\RPageID}{%
-\begin{tikzpicture}[
-    remember picture,
-    overlay
-]
+\begin{tikzpicture}[remember picture,overlay]
     \node[
         anchor=south east,
+        xshift=-8mm,
+        yshift=5mm,
         opacity=0.055,
         font=\ttfamily\fontsize{3}{3.5}\selectfont
     ]
-    at (
-        [xshift=-7mm,yshift=5mm]current page.south east
-    )
+    at (current page.south east)
     {R01::OOP.JAVA::26};
 \end{tikzpicture}%
 }
@@ -198,25 +184,17 @@ title=Mental Compression
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\REdge}{%
-\begin{tikzpicture}[
-    remember picture,
-    overlay
-]
+\begin{tikzpicture}[remember picture,overlay]
     \node[
         rotate=90,
+        xshift=-3mm,
         opacity=0.035,
         font=\ttfamily\fontsize{3}{3.5}\selectfont
     ]
-    at (
-        [xshift=-2.5mm]current page.east
-    )
+    at (current page.east)
     {R01.OOP.JAVA.26};
 \end{tikzpicture}%
 }
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% APPLY TO EVERY PAGE
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \AddToHook{shipout/background}{%
     \RPageID
